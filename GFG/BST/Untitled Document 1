@@ -1,0 +1,17 @@
+node* change(node* head)
+{
+	if(head==NULL || head->next==NULL)
+		return head;
+	node* ptr=head->next, prev=head;
+	
+	while(ptr->next!=NULL)
+	{
+		prev=ptr;
+		ptr=ptr->next;
+	}
+	
+	prev->next=NULL;
+	ptr->next=head;
+	return ptr;
+	
+}

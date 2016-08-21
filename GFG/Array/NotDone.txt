@@ -1,0 +1,54 @@
+Dynamic Programming | Set 18 (Partition problem)
+Maximum Product Subarray
+Maximum circular subarray sum
+Median of two sorted arrays of different sizes
+Count the number of possible triangles
+Iterative Quick Sort
+Construction of Longest Monotonically Increasing Subsequence (N log N)
+Find the first circular tour that visits all petrol pumps
+Stock Buy Sell to Maximize Profit
+Rearrange positive and negative numbers in O(n) time and O(1) extra space
+Sort elements by frequency | Set 2
+Find a peak element
+Print all possible combinations of r elements in a given array of size n
+Given an array of of size n and a number k, find all elements that appear more than n/k times
+Find the point where a monotonically increasing function becomes positive first time
+Find the Increasing subsequence of length three with maximum product
+Find the minimum element in a sorted and rotated array
+Stable Marriage Problem
+Merge k sorted arrays | Set 1
+Radix Sort
+Find number of pairs such that x^y > y^x
+Count all distinct pairs with difference equal to k
+Find if there is a subarray with 0 sum
+Smallest subarray with sum greater than a given value
+Sort an array according to the order defined by another array
+Maximum Sum Path in Two Arrays
+Check if a given array contains duplicate elements within k distance from each other
+Sort an array in wave form
+Find Index of 0 to be replaced with 1 to get longest continuous sequence of 1s in a binary array
+Find the closest pair from two sorted arrays
+Given a sorted array and a number x, find the pair in array whose sum is closest to x
+Construct an array from its pair-sum array
+Find common elements in three sorted arrays
+Find the first repeating element in an array of integers
+Find the smallest positive integer value that cannot be represented as sum of any subset of a given array
+Rearrange an array such that ‘arr[j]’ becomes ‘i’ if ‘arr[i]’ is ‘j’
+Find position of an element in a sorted array of infinite numbers
+Can QuickSort be implemented in O(nLogn) worst case time complexity?
+Check if a given array contains duplicate elements within k distance from each other
+Check if any two intervals overlap among a given set of intervals
+Delete an element from array (Using two traversals and one traversal)
+Given a sorted array and a number x, find the pair in array whose sum is closest to x
+Find the largest pair sum in an unsorted array
+Online algorithm for checking palindrome in a stream
+Pythagorean Triplet in an array
+Maximum profit by buying and selling a share at most twice
+Median of two sorted arrays
+Program for array rotation
+Reversal algorithm for array rotation
+Block swap algorithm for array rotation
+Find the two repeating elements in a given array
+Find the two numbers with odd occurrences in an unsorted array
+The Celebrity Problem
+Largest subarray with equal number of 0s and 1s

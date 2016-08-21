@@ -1,0 +1,64 @@
+#include <iostream>
+#include <stdio.h>
+#include <malloc.h>
+#include <stack>
+#include <queue>
+#define mp make_pair 
+#define F  first
+#define S  second
+
+using namespace std;
+
+struct node{
+	int data;
+	struct node* left;
+	struct node* right;
+	struct node* next;
+};
+
+node* newNode(int data)
+{
+	struct node *Nnode=(node*)malloc(sizeof(node));
+	Nnode->data=data;
+	Nnode->left=NULL;
+	Nnode->right=NULL;
+	Nnode->next=NULL;
+	return Nnode;
+}
+
+bool isComplete(node* root)
+{
+	if(root->left==NULL && root->right==NULL)
+		return true;
+	if(root->left && root->right)
+		return isComplete(root->left) && isComplete(root->right);
+	return false;
+}
+
+
+
+int main()
+{
+   /* Let us construct the following Binary Tree which
+      is not a complete Binary Tree
+            1
+          /   \
+         2     3
+        / \     \
+       4   5     6
+    */
+ 
+  struct node *root  = newNode(1);
+  root->left         = newNode(2);
+  root->right        = newNode(3);
+  root->left->left   = newNode(4);
+  root->left->right  = newNode(5);
+ // root->right->right = newNode(6);
+ 
+  if ( isComplete(root) == true )
+      printf ("Complete Binary Tree");
+  else
+      printf ("NOT Complete Binary Tree");
+ 
+  return 0;
+}

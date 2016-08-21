@@ -1,0 +1,66 @@
+#include <iostream>
+#include <stdio.h>
+#include <algorithm>
+
+using namespace std;
+
+struct node{
+	int sum, f, s;
+};
+
+bool compare(struct node a, struct node b)
+{
+	return (a.sum<b.sum);
+}
+
+void findFourElements(int A[], int n, int x)
+{
+	if(n<4)
+		return ;
+	
+	int i, j, k=0;
+	struct node Arr[n*n];
+	
+	for(i=0; i<n; i++)
+	{
+		for(j=i+1; j<n; j++)
+		{
+			Arr[k].sum=A[i]+A[j];
+			Arr[k].f=i;
+			Arr[k].s=j;
+			k++;
+		}
+	}
+	
+	sort(Arr, Arr+k, compare);
+	
+	i=0;
+	j=k-1;
+	
+	while(i<j)
+	{
+		if(Arr[i].f==Arr[j].f || Arr[i].s==Arr[j].s || Arr[i].f==Arr[j].s || Arr[i].s==Arr[j].f )
+			i++;
+		else if(Arr[i].sum+Arr[j].sum>x)
+			i++;
+		else if(Arr[i].sum+Arr[j].sum<x)
+			j--;
+		else 
+		{
+			cout<<A[Arr[i].f]<<" "<<A[Arr[i].s]<<" "<<A[Arr[j].f]<<" "<<A[Arr[j].s]<<" "<<endl;
+			i++;
+			j--;
+		}	
+	}
+	
+}
+
+
+int main()
+{
+    int A[] = {10, 20, 30, 40, 1, 2};
+    int n = sizeof(A) / sizeof(A[0]);
+    int X = 91;
+    findFourElements (A, n, X);
+    return 0;
+}

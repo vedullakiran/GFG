@@ -1,0 +1,18 @@
+k largest(or smallest) elements in an array | added Min Heap method
+Maximum difference between two elements
+Count Inversions in an array
+Maximum and minimum of an array using minimum number of comparisons
+Find the Minimum length Unsorted Subarray, sorting which makes the complete array sorted
+Check if array elements are consecutive | Added Method 3
+Given an array arr[], find the maximum j – i such that arr[j] > arr[i]
+Maximum of all subarrays of size k (Added a O(n) method)
+Find the repeating and the missing | Added 3 new methods
+Median in a stream of integers (running integers)
+Find the maximum element in an array which is first increasing and then decreasing
+Find the number of islands
+Count smaller elements on right side
+Find subarray with given sum
+Find duplicates in O(n) time and O(1) extra space
+Longest Monotonically Increasing Subsequence Size (N log N)
+Find the smallest positive number missing from an unsorted array
+Find a sorted subsequence of size 3 in linear time

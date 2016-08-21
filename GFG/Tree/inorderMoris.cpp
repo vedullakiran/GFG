@@ -1,0 +1,62 @@
+#include <iostream>
+#include <stdio.h>
+#include <malloc.h>
+#include <stack>
+
+using namespace std;
+
+struct node{
+	int data;
+	struct node* left;
+	struct node* right;
+};
+
+node* newNode(int data)
+{
+	struct node *Nnode=(node*)malloc(sizeof(node));
+	Nnode->data=data;
+	Nnode->left=NULL;
+	Nnode->right=NULL;
+	return Nnode;
+}
+
+void morrisTraverse(struct node* root)
+{
+	node* pre=root, *curr;
+	while(pre)
+	{
+		if(pre->left==NULL)
+		{
+			cout<<pre->data<<" ";
+			pre=pre->right;
+		}
+		else
+		{
+			curr=pre->left;
+			while(curr->right!=NULL && curr->right!=pre)
+				curr=curr->right;
+			
+			if(curr->right==pre)
+			{
+				curr->right=NULL;
+				cout<<pre->data<<" ";
+				pre=pre->right;
+			}
+			else
+			{
+				curr->right=pre;
+				pre=pre->left;
+			}
+		}
+	}
+}
+
+int main()
+{
+	struct node *root = newNode(1);
+	root->left        = newNode(2);
+	root->right       = newNode(3);
+	root->left->left  = newNode(4);
+	root->left->right = newNode(5);
+	morrisTraverse(root);
+}
